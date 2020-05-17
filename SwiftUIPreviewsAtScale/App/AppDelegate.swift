@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ScalingSwiftUIPreviews
+//  SwiftUIPreviewsAtScale
 //
 //  Created by Vadim Bulavin on 5/7/20.
 //  Copyright © 2020 Vadim Bulavin. All rights reserved.

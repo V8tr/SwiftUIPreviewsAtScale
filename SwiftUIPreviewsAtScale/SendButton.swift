@@ -1,6 +1,6 @@
 //
 //  SendButton.swift
-//  ScalingSwiftUIPreviews
+//  SwiftUIPreviewsAtScale
 //
 //  Created by Vadim Bulavin on 5/7/20.
 //  Copyright © 2020 Vadim Bulavin. All rights reserved.
@@ -23,15 +23,16 @@ struct SendButton: View {
     }
 }
 
-//struct SendButton_Preview: PreviewProvider {
-//    static var previews: some View {
-//        SendButton()
-//            .previewButtonPreset()
-//    }
-//}
-struct SendButton_Preview_1: PreviewProvider {
+struct SendButton_Preview_Preset: PreviewProvider {
+    static var previews: some View {
+        SendButton()
+            .previewButtonPreset()
+    }
+}
+
+struct SendButton_Preview_WithoutPreset: PreviewProvider {
     static let sizeCategories: [ContentSizeCategory] = [.extraSmall, .medium, .extraExtraExtraLarge]
-    
+
     static var previews: some View {
         Group {
             // Supported locales
@@ -42,7 +43,7 @@ struct SendButton_Preview_1: PreviewProvider {
                     .environment(\.locale, locale)
                     .previewDisplayName("Locale: \(locale.identifier)")
             }
-            
+
             // Dark theme
             SendButton()
                 .padding()
@@ -50,14 +51,14 @@ struct SendButton_Preview_1: PreviewProvider {
                 .background(Color(.systemBackground))
                 .environment(\.colorScheme, .dark)
                 .previewDisplayName("Dark Theme")
-            
+
             // Right to left
             SendButton()
                 .padding()
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .environment(\.layoutDirection, .rightToLeft)
                 .previewDisplayName("Right to Left")
-            
+
             // Content size categories
             ForEach(sizeCategories, id: \.self) { sizeCategory in
                 SendButton()
