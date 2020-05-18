@@ -6,7 +6,7 @@
 
 # SwiftUIPreviewsAtScale
 
-A sample project showing techniques to help you manage SwiftUI previews at scale:
+A sample project showing three techniques to help you manage SwiftUI previews at scale:
 - Extracting reusable previews into components.
 - Combining groups of previews into presets.
 - Using Fixture Object pattern to simplify object graph instantiation.
