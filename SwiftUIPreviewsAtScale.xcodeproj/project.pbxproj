@@ -73,7 +73,7 @@
 			path = Landmarks;
 			sourceTree = "<group>";
 		};
-		881B7AE12471D97700F69ED4 /* Previews */ = {
+		881B7AE12471D97700F69ED4 /* PreviewPresets */ = {
 			isa = PBXGroup;
 			children = (
 				881B7ADD2471D95700F69ED4 /* ContentSizeCategoryPreview.swift */,
@@ -83,7 +83,7 @@
 				881B7ADB2471D94900F69ED4 /* RightToLeftPreview.swift */,
 				88FFB68B2463F7C600C28CBB /* View+PreviewPresets.swift */,
 			);
-			path = Previews;
+			path = PreviewPresets;
 			sourceTree = "<group>";
 		};
 		88FFB6692463F27A00C28CBB = {
@@ -106,8 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				88FFB68A2463F28F00C28CBB /* App */,
-				881B7AE12471D97700F69ED4 /* Previews */,
-				88FFB6792463F27A00C28CBB /* ContentView.swift */,
+				881B7AE12471D97700F69ED4 /* PreviewPresets */,
 				88FFB68D2464170100C28CBB /* SendButton.swift */,
 				881B7AD62471D8F800F69ED4 /* Landmarks */,
 				88FFB6A72464177100C28CBB /* Localizable.strings */,
@@ -140,6 +139,7 @@
 			children = (
 				88FFB6752463F27A00C28CBB /* AppDelegate.swift */,
 				88FFB6772463F27A00C28CBB /* SceneDelegate.swift */,
+				88FFB6792463F27A00C28CBB /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";

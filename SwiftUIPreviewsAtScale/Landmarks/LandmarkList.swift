@@ -31,39 +31,6 @@ struct LandmarkList: View {
     }
 }
 
-struct LandmarksList_Previews_WithoutFixture: PreviewProvider {
-    static var previews: some View {
-        let landmark1 = Landmark(
-            id: 1,
-            name: "Turtle Rock",
-            imageName: "turtlerock",
-            coordinates: Coordinates(latitude: 34.011286, longitude: -116.166868),
-            state: "California",
-            park: "Joshua Tree National Park",
-            category: .rivers,
-            isFavorite: true
-        )
-        
-        let landmark2 = Landmark(
-            id: 2,
-            name: "Silver Salmon Creek",
-            imageName: "silversalmoncreek",
-            coordinates: Coordinates(latitude: 59.980167, longitude: -152.665167),
-            state: "Alaska",
-            park: "Lake Clark National Park and Preserve",
-            category: .lakes,
-            isFavorite: false
-        )
-        
-        let userData = UserData()
-        userData.landmarks = [landmark1, landmark2]
-        
-        return LandmarkList()
-            .previewDevice("iPhone SE")
-            .environmentObject(userData)
-    }
-}
-
 struct LandmarksList_Previews: PreviewProvider {
     static var previews: some View {
         let twoRows = UserData()
